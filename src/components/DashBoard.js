@@ -101,7 +101,7 @@ const DashBoard = () => {
   return (
     <Box sx={{ flexGrow: 1, p:3 , width:'81%' , marginLeft:'275px' , height:'105vh' , display:'flex' , flexDirection:'column' , gap:7 , mt:12 }}>
         <Box sx={{width:'100%' , height:'230px' , display:'flex' , alignItems:'center' , justifyContent:'space-between'}}>
-            <Box className='active-workflow' sx={{width:'31%' , height:'100%' , backgroundImage:'linear-gradient(#00CBFF,#007A99)' , borderRadius:'35px' , padding:'20px 30px' , display:'flex' , flexDirection:'column' , justifyContent:'space-between' , boxShadow:'10px 10px 15px #ccc'}}>
+            <Box className='active-workflow' sx={{width:'31%' , height:'100%' , backgroundImage:'linear-gradient(#00CBFF,#007A99)' , borderRadius:'35px' , padding:'20px 30px' , display:'flex' , flexDirection:'column' , justifyContent:'space-between' , boxShadow:'5px 5px 5px #ccc'}}>
                 <Typography sx={{fontSize:'25px' , fontWeight:'600' , color:'white' , textShadow:'2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Active Workflows</Typography>
                 <Box sx={{display:'flex' , gap:2 , alignItems:'center'}}>
                     {/* <ShoppingBagOutlinedIcon sx={{width:'45px' , height:'45px' , color:'white' , bgcolor:'#65E0FF' , padding:'5px 8px' , borderRadius:'10px'}}/> */}
@@ -117,7 +117,7 @@ const DashBoard = () => {
                     <span style={{fontWeight:'500' , fontSize:'20px' , color:'white'}}>+1.4k this week</span>
                 </Box>
             </Box>
-            <Box className='decisions' sx={{width:'31%' , height:'100%' , backgroundImage:'linear-gradient(#9970EB,#573F85)' , borderRadius:'35px' , padding:'20px 30px' , display:'flex' , flexDirection:'column' , justifyContent:'space-between' , boxShadow:'10px 10px 15px #ccc'}}>
+            <Box className='decisions' sx={{width:'31%' , height:'100%' , backgroundImage:'linear-gradient(#9970EB,#573F85)' , borderRadius:'35px' , padding:'20px 30px' , display:'flex' , flexDirection:'column' , justifyContent:'space-between' , boxShadow:'5px 5px 5px #ccc'}}>
                 <Typography sx={{ fontSize:'25px' , fontWeight:'600' , color:'white' , textShadow:'2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Decisions</Typography>
                 <Box sx={{display:'flex' , gap:2 , alignItems:'center'}}>
                     <DashboardOutlinedIcon sx={{width:'45px' , height:'45px' , color:'white' , bgcolor:'#AB9FF4' , padding:'5px 8px' , borderRadius:'10px'}}/>
@@ -132,7 +132,7 @@ const DashBoard = () => {
                     <span style={{fontWeight:'500' , fontSize:'20px' , color:'white'}}>+1.4k this week</span>
                 </Box>
             </Box>
-            <Box className='humans' sx={{width:'31%' , height:'100%' , backgroundImage:'linear-gradient(#EEA8ED,#886087)' , borderRadius:'35px' , padding:'20px 30px' , display:'flex' , flexDirection:'column' , justifyContent:'space-between' , boxShadow:'10px 10px 15px #ccc'}}>
+            <Box className='humans' sx={{width:'31%' , height:'100%' , backgroundImage:'linear-gradient(#EEA8ED,#886087)' , borderRadius:'35px' , padding:'20px 30px' , display:'flex' , flexDirection:'column' , justifyContent:'space-between' , boxShadow:'5px 5px 5px #ccc'}}>
                 <Typography sx={{ fontSize:'25px' , fontWeight:'600' , color:'white' , textShadow:'2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Human</Typography>
                 <Box sx={{display:'flex' , gap:2 , alignItems:'center'}}>
                     <PersonOutlineOutlinedIcon sx={{width:'45px' , height:'45px' , color:'white' , bgcolor:'#F3CAF3' , padding:'5px 8px' , borderRadius:'10px'}}/>
@@ -149,8 +149,8 @@ const DashBoard = () => {
             </Box>
         </Box>
         <Box sx={{width:'100%' , height:'450px' , display:'flex' , alignItems:'center' , justifyContent:'space-between'}}>
-            <Box classNam='graph-section' sx={{width:'65.5%' , height:'470px' , display:'flex' , flexDirection:"column" , gap:1, padding:'20px 10px' , boxShadow:'5px 5px 20px #ccc' , paddingRight:'30px' , borderRadius:'5px'}}>
-                <Box sx={{display:'flex' , alignItems:'center' , justifyContent:'space-between'}}>
+            <Box classNam='graph-section' sx={{width:'65.5%' , height:'470px' , display:'flex' , flexDirection:"column" , gap:1, padding:'10px 10px' , boxShadow: '2px 2px 10px rgb(226, 226, 226)' , borderRadius:'5px' , paddingRight:'25px'}}>
+                <Box sx={{display:'flex' , alignItems:'center' , justifyContent:'space-around'}}>
                     <Typography sx={{fontWeight:'600' , fontSize:'25px'}}>Active Workflows (Improvements)</Typography>
                     {/* <Button sx={{color:'black'}}>Export Data</Button> */}
                     <Select sx={{boxShadow: "none",".MuiOutlinedInput-notchedOutline": { border: 0 },"&.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline":{border: 0,},"&.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline":{border: 0,},}} 
@@ -183,11 +183,11 @@ const DashBoard = () => {
                     </ResponsiveContainer>
                 </Box>
             </Box>
-            <Box classNam='donut-section' sx={{width:'30%' , height:'470px' , bgcolor:'white' , boxShadow:'5px 5px 20px #ccc' , display:'flex' , flexDirection:'column' , alignItems:'center' , justifyContent:'space-around' , padding:'10px' , borderRadius:'5px'}}>
+            <Box classNam='donut-section' sx={{width:'30%' , height:'470px' , bgcolor:'white' , boxShadow: '2px 2px 10px rgb(226, 226, 226)' , display:'flex' , flexDirection:'column' , alignItems:'center' , justifyContent:'space-around' , padding:'20px 10px' , borderRadius:'5px' , backgroundColor:'white'}}>
                 <Typography sx={{fontWeight:'600' , fontSize:'25px'}}>Top Categories</Typography>
                 {/* <img src='\images\Frame 2 (2).png' alt='#' style={{width:'205px' , height:'205px'}}/> */}
-                <ResponsiveContainer width='100%'>
-                    <PieChart>
+                <ResponsiveContainer width='100%' style={{backgroundColor:'white'}}>
+                    <PieChart >
                         <Pie data={pieData} cx="50%" cy="50%" innerRadius={70} outerRadius={110} fill="#8884d8" paddingAngle={2} dataKey="value">
                             {pieData.map((entry,index)=>(
                                 <Cell key={`cell-${index}`} fill={colors[index % colors.length]}/>
@@ -197,11 +197,6 @@ const DashBoard = () => {
                         {<text x={165} y={175} textAnchor='middle' dominantBaseline='top' fontSize='25' style={{fontWeight:'600'}}>${formattedTotal}</text>}
                     </PieChart>
                 </ResponsiveContainer>
-                {/* <Box>
-                    <p style={{fontSize:'15px' , color:'#A6A8B1'}}>- Under Writing</p>
-                    <p style={{fontSize:'15px' , color:'#A6A8B1'}}>- Doc Verificaiton</p>
-                    <p style={{fontSize:'15px' , color:'#A6A8B1'}}>- Customer Support</p>
-                </Box> */}
             </Box>
         </Box>
     </Box>

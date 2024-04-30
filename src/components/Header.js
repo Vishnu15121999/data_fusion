@@ -28,6 +28,7 @@ import DomainVerificationIcon from '@mui/icons-material/DomainVerification';
 import ScreenSearchDesktopIcon from '@mui/icons-material/ScreenSearchDesktop';
 import StorageIcon from '@mui/icons-material/Storage';
 import TransformIcon from '@mui/icons-material/Transform';
+import DonutSmallIcon from '@mui/icons-material/DonutSmall';
 import GraphicEqIcon from '@mui/icons-material/GraphicEq';
 import QueryStatsIcon from '@mui/icons-material/QueryStats';
 import SavedSearchIcon from '@mui/icons-material/SavedSearch';
@@ -70,7 +71,7 @@ export default function Header() {
             <AppBar position="fixed" sx={{ height:'100px' , boxShadow:'none' , display:'flex' , justifyContent:'center' , width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` , bgcolor:'white' , padding:'0px 20px'}}>
                 <Toolbar sx={{display:'flex' , justifyContent:'space-between' , alignItems:'center'}}>
                     <Box sx={{marginTop:'20px'}}>
-                        <Typography sx={{color:'black' , fontWeight:'550' , fontSize:'25px'}} noWrap component="div">Dashboard</Typography>
+                        <Typography sx={{color:'black' , fontWeight:'550' , fontSize:'35px'}} noWrap component="div">Dashboard</Typography>
                         <Typography sx={{color:'#000000' , opacity:'53%' , fontSize:'18px'}}>Here are today's stats</Typography>
                     </Box>
                     <Box sx={{display:'flex' , alignItems:'center' , justifyContent:'center', gap:1}}>
@@ -82,9 +83,9 @@ export default function Header() {
                 </Toolbar>
             </AppBar>
             <Drawer sx={{ width: drawerWidth, flexShrink: 0, '& .MuiDrawer-paper': { width: drawerWidth, boxSizing: 'border-box', borderRadius: '0px 20px 20px 0px', bgcolor: '#222124' } }} variant="permanent" anchor="left">
-                <Toolbar sx={{margin:'15px 0px' , display:"flex" , gap:1}}>
+                <Toolbar sx={{margin:'15px 0px' , display:"flex" , gap:1 , alignItems:'center' , justifyContent:'center'}}>
                     <img src='\images\Logo.png' alt='company-logo' style={{width:'42px', height:'42px'}}/>
-                    <Typography sx={{color:'white' , fontSize:'28px' , fontWeight:'500'}}>Data Fusion</Typography>
+                    <Typography sx={{color:'white' , fontSize:'29px' , fontWeight:'500'}}>Data Fusion</Typography>
                 </Toolbar>
                 {/* <Divider sx={{ border: '1px solid white' }} /> */}
                 <div style={{ overflow: 'scroll', scrollbarWidth: 'none' }}>
@@ -167,7 +168,8 @@ export default function Header() {
                         <ListItem button onClick={handleOpenCreate} sx={{color:'white'}}>
                             <ListItemIcon>
                                 {/* <HomeIcon sx={{color:'white'}}/> */}
-                                <img style={{width:'30px' , height:'30px'}} src='\images\Image [hidden].png' alt='#'/>
+                                {/* <img style={{width:'30px' , height:'30px'}} src='\images\Image [hidden].png' alt='#'/> */}
+                                <DonutSmallIcon sx={{color:'white'}}/>
                             </ListItemIcon>
                             <ListItemText primary='Automation' />
                             {openCreate ? <ExpandMoreIcon sx={{color:'white'}}/> : <KeyboardArrowRightIcon sx={{color:'white'}}/>}
